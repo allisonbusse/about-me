@@ -1,0 +1,15 @@
+#user-guess {
+    width: 200px;
+    font-size: 1.4em;
+}
+
+.guess-section {
+    text-align: center;
+}
+
+.rules-section {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #0B486B;
+}
