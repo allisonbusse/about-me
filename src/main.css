@@ -88,6 +88,18 @@ button :hover {
     margin: 20px auto;
 }
 
+.good-score {
+    color: green;
+}
+
+.bad-score {
+    color: red;
+}
+
+.middle-score {
+    color: darkgoldenrod;
+}
+
 .hidden {
     display: none;
 }
