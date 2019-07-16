@@ -6,9 +6,13 @@ function isYes(text) {
     else if(text === 'y') {
         return true;
     }
-    else {
+    else if(text === 'no') {
         return false;
     }
+    else if(text === 'n') {
+        return false;
+    }
+    else return alert('Please enter only yes or no!');
 }
 
 

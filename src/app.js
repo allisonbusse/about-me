@@ -24,7 +24,7 @@ startQuiz.onclick = function() {
     let correctAnswers = 0;
 
     //first coffee question
-    const firstQuestion = prompt('Does tea have caffeine in it?');
+    const firstQuestion = prompt('Is coffee a stimulant?');
 
     //convert to boolean
     const correctFirstQuestion = true;
@@ -33,10 +33,10 @@ startQuiz.onclick = function() {
     }
 
     //second coffee question
-    const secondQuestion = prompt('Is caffeine a plant?');
+    const secondQuestion = prompt('Is coffee considered a carcinogenic food?');
 
     //convert to boolean
-    const correctSecondQuestion = true;
+    const correctSecondQuestion = false;
     if(isYes(secondQuestion) === correctSecondQuestion) {
         correctAnswers += 1;
     }

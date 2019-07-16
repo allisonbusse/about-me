@@ -14,3 +14,16 @@ test('yes is yes', function(assert) {
     //Assert
     assert.equal(result, expected);
 });
+
+test('no is no', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const text = 'no';
+    const expected = false;
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = isYes(text);
+
+    //Assert
+    assert.equal(result, expected);
+});
