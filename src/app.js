@@ -13,12 +13,6 @@ const results = document.getElementById('results');
 startQuiz.onclick = function() {
     //ask user for their name
     const name = prompt('Hi there! What\'s your name?');
-    if(name === null) {
-        return prompt('Come on, we need your name!');
-    }
-    else if(name === '') {
-        return prompt('Please tell us!');
-    }
 
     //confirm they want to take the quiz
     const check = confirm('Hi ' + name + '! Are you sure you\'re ready for this?');
