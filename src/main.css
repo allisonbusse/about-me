@@ -78,3 +78,7 @@ button :hover {
     width: 50%;
     margin: 20px auto;
 }
+
+.hidden {
+    display: none;
+}
