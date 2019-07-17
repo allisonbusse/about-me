@@ -29,16 +29,22 @@
         <section class="guess-section">
             <h2>Enter Your Guess</h2>
             <p>
-                <input type="number" min="0" max="20" id="user-guess">
+                <input type="number" id="user-guess">
             </p>
             <button id="check-answer">See If You're Right</button>
         </section>
 
-        <section>
-
+        <section class="results-section">
+            <p id="guess-response"></p>
+            <p id="guesses-left"></p>
         </section>
 
     </main>
+
+    <footer>
+            <p>Made by Allison</p>
+    </footer>
     
+    <script src="./src/numberGame.js" type="module"></script>
 </body>
 </html>
