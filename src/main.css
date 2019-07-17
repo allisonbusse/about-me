@@ -25,9 +25,17 @@ header {
     margin: 20px 0;
 }
 
-section {
-    padding: 20px 50px 40px 50px;
+nav {
+    background: #0B486B;
+    padding: 8px 0;
+    color: white;
+    margin-bottom: 40px;
 }
+
+nav a {
+    color: white;
+}
+
 
 ul {
     list-style-position: inside;

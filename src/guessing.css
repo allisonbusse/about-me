@@ -3,6 +3,10 @@
     font-size: 1.4em;
 }
 
+section {
+    padding: 10px;
+}
+
 .guess-section {
     text-align: center;
 }
@@ -11,19 +15,18 @@
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid #0B486B;
+    font-size: 1.2em;
 }
 
 #results-section {
-    margin-bottom: 30px;
+    border: 1px solid #0B486B;
+    margin: 30px auto;
+}
+
+#guesses-left {
+    font-weight: bold;
 }
 
 .hidden {
     display: none;
-}
-
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }

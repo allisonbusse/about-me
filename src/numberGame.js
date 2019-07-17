@@ -19,27 +19,28 @@ checkAnswer.addEventListener('click', () => {
     guessCount -= 1;
     if(compareNumbers(Number(guess.value), correctNumber) === 0) {
         resultsSection.classList.remove('hidden');
-        guessResponse.textContent = 'You got it! Way to go!';
+        guessResponse.textContent = '🎉 🏄🏻‍♀️ You got it! Way to go! 🎉 🏄🏻‍♀️';
+        guessesLeft.classList.add('hidden');
         checkAnswer.disabled = true;
     }
     
     else if(guessCount < 1) {
         resultsSection.classList.remove('hidden');
-        guessResponse.textContent = 'Ah, so close! But now you\'re out of guesses';
-        guessesLeft.textContent = '';
+        guessResponse.textContent = '😩 Ah, so close! But now you\'re out of guesses 😩';
+        guessesLeft.classList.add('hidden');
         checkAnswer.disabled = true;
     }
     
     else if(compareNumbers(Number(guess.value), correctNumber) === 1) {
         resultsSection.classList.remove('hidden');
-        guessResponse.textContent = 'Oooh you\'re a bit too high';
+        guessResponse.textContent = '👇 Oooh you\'re a bit too high 👇';
         guessesLeft.textContent = 'Number of guesses left: ' + guessCount;
         
     }
 
     else if(compareNumbers(Number(guess.value), correctNumber) === -1) {
         resultsSection.classList.remove('hidden');
-        guessResponse.textContent = 'Oooh you\'re a bit too low';
+        guessResponse.textContent = '👆 Oooh you\'re a bit too low 👆';
         guessesLeft.textContent = 'Number of guesses left: ' + guessCount;
         
     }
