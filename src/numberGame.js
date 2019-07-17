@@ -4,7 +4,7 @@ import compareNumbers from './guessnumber.js';
 //Reference needed DOM elements
 const checkAnswer = document.getElementById('check-answer');
 const guess = document.getElementById('user-guess');
-const resultsSection = document.getElementById('results-section')
+const resultsSection = document.getElementById('results-section');
 const guessResponse = document.getElementById('guess-response');
 const guessesLeft = document.getElementById('guesses-left');
 
