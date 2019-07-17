@@ -12,6 +12,7 @@ const guessesLeft = document.getElementById('guesses-left');
 //Initialization
 // Math function from MDN
 const correctNumber = Math.floor(Math.random() * 20);
+
 let guessCount = 4;
 
 //Event Handlers
