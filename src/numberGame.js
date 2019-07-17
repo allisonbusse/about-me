@@ -17,6 +17,8 @@ let guessCount = 4;
 //Event Handlers
 checkAnswer.addEventListener('click', () => {
     guessCount -= 1;
+
+    // If the user guesses correct answer
     if(compareNumbers(Number(guess.value), correctNumber) === 0) {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '🎉 🏄🏻‍♀️ You got it! Way to go! 🎉 🏄🏻‍♀️';
@@ -24,6 +26,7 @@ checkAnswer.addEventListener('click', () => {
         checkAnswer.disabled = true;
     }
     
+    // If the user runs out of guesses
     else if(guessCount < 1) {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '😩 Ah, so close! But now you\'re out of guesses 😩';
@@ -31,6 +34,7 @@ checkAnswer.addEventListener('click', () => {
         checkAnswer.disabled = true;
     }
     
+    // If the user guesses too high
     else if(compareNumbers(Number(guess.value), correctNumber) === 1) {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '👇 Oooh you\'re a bit too high 👇';
@@ -38,6 +42,7 @@ checkAnswer.addEventListener('click', () => {
         
     }
 
+    // If the user guesses too low
     else if(compareNumbers(Number(guess.value), correctNumber) === -1) {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '👆 Oooh you\'re a bit too low 👆';
