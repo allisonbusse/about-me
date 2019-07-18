@@ -1,0 +1,45 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.game-section {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.option-photos {
+    width: 100px;
+    margin: 12px;
+    padding: 10px;
+    border: 2px solid transparent;
+
+}
+
+label {
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked + .option-photos {
+    border: 2px solid black;
+}
+
+.results-section {
+    text-align: center;
+    margin: 40px auto;
+}
+
+#generated-hand {
+    width: 200px;
+}
+
+table {
+    width: 200px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2em;
+}

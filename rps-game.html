@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" type="text/css" href="./src/main.css">
+    <link rel="stylesheet" type="text/css" href="./src/rps-game.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Let's Play Rock, Paper, Scissors!</h1>
+        <nav>
+            <a href="./">Home</a> | 
+            <a href="guessing.html">Guessing Game</a> |    
+            <a href="rps-game.html">Rock, Paper, Scissors</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Ready to play? In case you need a refresher, here are the rules:</p>
+            <ul>
+                <li>Rock crushes scissors.</li>
+                <li>Scissors cut paper.</li>
+                <li>Paper covers rock.</li>
+            </ul>
+        </section>
+        <section class="game-section">
+        <label>
+            <input type="radio" name="options" value="rock" checked>
+            <img src="./assets/rock.png" class="option-photos">
+        </label>
+
+        <label>
+            <input type="radio" name="options" value="paper">
+            <img src="./assets/paper.png" class="option-photos">
+        </label>
+
+        <label>
+            <input type="radio" name="options" value="scissors">
+            <img src="./assets/scissors.png" class="option-photos">
+        </label>
+        <p>
+            <button id="user-pick">Play!</button>
+        </p>
+        </section>
+
+        <section class="results-section">
+        <img id="generated-hand" src="assets/scissors.png">
+        <h2 id="outcome-message">You lost!</h2>
+
+        <table>
+            <tr>
+                <td>Wins: </td>
+                <td>Losses:</td>
+            </tr>
+            <tr>
+                <td><span id="win-count">0</span></td>
+                <td><span id="loss-count">0</span></td>
+            </tr>
+        </table>
+        </section>
+
+    </main>
+    
+    <script type="module" src="rps-game.js"></script>
+</body>
+</html>
