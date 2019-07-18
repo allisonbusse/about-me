@@ -33,7 +33,7 @@ input:checked + .option-photos {
     margin: 40px auto;
 }
 
-#generated-hand {
+#generated-hand, #user-image {
     width: 200px;
 }
 
