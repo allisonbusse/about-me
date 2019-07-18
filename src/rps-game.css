@@ -24,13 +24,18 @@ input {
     display: none;
 }
 
+input#user-bet {
+    display: inline;
+    font-size: 1.1em;
+}
+
 input:checked + .option-photos {
     border: 2px solid black;
 }
 
-.results-section {
+#results-section {
     text-align: center;
-    margin: 40px auto;
+    margin: 70px auto;
 }
 
 #generated-hand, #user-image {
@@ -50,4 +55,9 @@ table {
     margin: 0 auto;
     font-weight: bold;
     font-size: 1.2em;
+    display: inline;
+}
+
+#rules-section {
+
 }

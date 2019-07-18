@@ -19,15 +19,35 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="rules-section">
             <p>Ready to play? In case you need a refresher, here are the rules:</p>
             <ul>
                 <li>Rock crushes scissors.</li>
                 <li>Scissors cut paper.</li>
                 <li>Paper covers rock.</li>
             </ul>
+            
+            
+            
+            <table>
+                <tr>
+                    <td colspan="2"><p>Your Balance: $<span id="user-balance">500</span></p></td>
+                </tr>
+                <tr>
+                    <td>Wins: </td>
+                    <td>Losses:</td>
+                </tr>
+                <tr>
+                    <td><span id="win-count">0</span></td>
+                    <td><span id="loss-count">0</span></td>
+                </tr>
+            </table>
+
         </section>
         <section class="game-section">
+        <h3>Your Bet: </h3>
+        <p>$ <input type="number" id="user-bet"></p>
+        <h3>Your Pick:</h3>
         <label>
             <input type="radio" name="options" value="rock" checked>
             <img src="./assets/rock.png" class="option-photos">
@@ -47,22 +67,13 @@
         </p>
         </section>
 
-        <section class="results-section">
+        <section id="results-section" class="hidden">
         <img id="user-image" src="assets/paper.png" class="hidden">
         vs.
         <img id="generated-hand" src="assets/scissors.png" class="hidden">
-        <h2><span id="outcome-message" class="hidden"></span></h2>
+        <h2><span id="outcome-message"></span></h2>
 
-        <table>
-            <tr>
-                <td>Wins: </td>
-                <td>Losses:</td>
-            </tr>
-            <tr>
-                <td><span id="win-count">0</span></td>
-                <td><span id="loss-count">0</span></td>
-            </tr>
-        </table>
+        
         </section>
 
     </main>
