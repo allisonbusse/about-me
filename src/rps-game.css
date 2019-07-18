@@ -41,6 +41,10 @@ input:checked + .option-photos {
     visibility: hidden;
 }
 
+.hidden {
+    display: none;
+}
+
 table {
     width: 200px;
     margin: 0 auto;
