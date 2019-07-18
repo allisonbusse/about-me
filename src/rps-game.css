@@ -37,6 +37,10 @@ input:checked + .option-photos {
     width: 200px;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 table {
     width: 200px;
     margin: 0 auto;
