@@ -55,9 +55,19 @@ table {
     margin: 0 auto;
     font-weight: bold;
     font-size: 1.2em;
-    display: inline;
+
 }
 
 #rules-section {
+    float: left;
+    display: flexbox;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#status-section {
+    display: flexbox;
+    justify-content: space-evenly;
+    align-content: center;
 
 }

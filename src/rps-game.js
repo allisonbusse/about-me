@@ -41,7 +41,21 @@ playGame.addEventListener('click', () => {
     resultsSection.classList.remove('hidden');
     
     //compare computer throw to user choice
-    if(userChoice === computerThrow) {
+    if(balance <= 0) {
+        outcomeMessage.textContent = 'Oh no! You\'re out of money. Refresh to play again.';
+        userImage.classList.add('hidden');
+        generatedImage.classList.add('hidden');
+        playGame.disabled = true;
+    }
+
+    else if(userBet > balance) {
+        outcomeMessage.textContent = 'Oops, you don\'t have that much money left. Try a lower bet.';
+        userImage.classList.add('hidden');
+        generatedImage.classList.add('hidden');
+        playGame.disabled = true;
+    }
+    
+    else if(userChoice === computerThrow) {
         outcomeMessage.textContent = 'Draw! Try again.';
         balance;
     }
