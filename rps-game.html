@@ -19,22 +19,34 @@
         </nav>
     </header>
     <main>
-        <section id="rules-section">
-            <h2>The Rules</h2>
-            <p>Ready to play? Enter your bet and make your pick. In case you need a refresher, here are the rules:</p>
-            <ul>
-                <li>Rock crushes scissors.</li>
-                <li>Scissors cut paper.</li>
-                <li>Paper covers rock.</li>
-            </ul>
-            
-        </section>
+        <div id="top-section">
+                <section class="game-section">
+                    <h2>Play the game!</h2>
+                        <h3>Your Pick:</h3>
+                        <label>
+                            <input type="radio" name="options" value="rock" checked>
+                            <img src="./assets/rock.png" class="option-photos">
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="options" value="paper">
+                            <img src="./assets/paper.png" class="option-photos">
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="options" value="scissors">
+                            <img src="./assets/scissors.png" class="option-photos">
+                        </label>
+                        <h3>Your Bet: </h3>
+                        <p>$ <input type="number" id="user-bet"></p>
+                        <p>
+                            <button id="play-game">Play!</button>
+                        </p>
+                        </section>
         <section id="status-section">  
             <h2>Your Status</h2> 
-            <table>
-                <tr>
-                    <td colspan="2"><p>Your Balance: $<span id="user-balance">500</span></p></td>
-                </tr>
+            <p>Your Balance: $<span id="user-balance">500</span></p>
+                <table>
                 <tr>
                     <td>Wins: </td>
                     <td>Losses:</td>
@@ -44,30 +56,18 @@
                     <td><span id="loss-count">0</span></td>
                 </tr>
             </table>
-
+            <section id="rules-section">
+                    <h2>The Rules</h2>
+                    <p>Ready to play? Enter your bet and make your pick. In case you need a refresher, here are the rules:</p>
+                    <ul>
+                        <li>Rock crushes scissors.</li>
+                        <li>Scissors cut paper.</li>
+                        <li>Paper covers rock.</li>
+                    </ul>
+                    
+                </section>
         </section>
-        <section class="game-section">
-        <h3>Your Bet: </h3>
-        <p>$ <input type="number" id="user-bet"></p>
-        <h3>Your Pick:</h3>
-        <label>
-            <input type="radio" name="options" value="rock" checked>
-            <img src="./assets/rock.png" class="option-photos">
-        </label>
-
-        <label>
-            <input type="radio" name="options" value="paper">
-            <img src="./assets/paper.png" class="option-photos">
-        </label>
-
-        <label>
-            <input type="radio" name="options" value="scissors">
-            <img src="./assets/scissors.png" class="option-photos">
-        </label>
-        <p>
-            <button id="play-game">Play!</button>
-        </p>
-        </section>
+    </div>
 
         <section id="results-section" class="hidden">
         <img id="user-image" src="assets/paper.png" class="hidden">
