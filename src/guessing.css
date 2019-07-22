@@ -1,0 +1,32 @@
+#user-guess {
+    width: 200px;
+    font-size: 1.4em;
+}
+
+section {
+    padding: 10px;
+}
+
+.guess-section {
+    text-align: center;
+}
+
+.rules-section, #results-section {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#results-section {
+    border: 1px solid #0B486B;
+    margin: 30px auto;
+}
+
+#guesses-left, #guess-response {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess the Number!</title>
+    <link rel="stylesheet" type="text/css" href="./src/guessing.css">
+    <link rel="stylesheet" type="text/css" href="./src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Guess My Favorite Number</h1>
+        <nav>
+            <a href="./">Home</a> | 
+            <a href="guessing.html">Guessing Game</a> |    
+            <a href="rps-game.html">Rock, Paper, Scissors</a>
+            </nav>
+    </header>
+
+    <main>
+        <section class="rules-section">
+            <h2>How it Works</h2>
+            <p>
+                I'm thinking of a number between 0 and 20. Can you figure out what it is? 
+            <br>
+                You have four guesses, but don't worry I'll let you know how you're doing along the way.
+            </p>
+        </section>
+
+        <section class="guess-section">
+            <h2>Enter Your Guess</h2>
+            <p>
+                <input type="number" id="user-guess">
+            </p>
+            <button id="check-answer">See If You're Right</button>
+        </section>
+
+        <section id = "results-section" class="hidden">
+            <h2>Did You Get It?</h2>
+            <p id="guess-response"></p>
+            <p id="guesses-left"></p>
+        </section>
+
+    </main>
+    
+    <script src="./src/numberGame.js" type="module"></script>
+</body>
+</html>
