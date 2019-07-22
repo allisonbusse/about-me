@@ -37,12 +37,13 @@
                             <input type="radio" name="options" value="scissors">
                             <img src="./assets/scissors.png" class="option-photos">
                         </label>
+                        
                         <h3>Your Bet: </h3>
                         <p>$ <input type="number" id="user-bet"></p>
                         <p>
                             <button id="play-game">Play!</button>
                         </p>
-                        </section>
+                </section>
         <section id="status-section">  
             <h2>Your Status</h2> 
             <p>Your Balance: $<span id="user-balance">500</span></p>
@@ -55,7 +56,7 @@
                     <td><span id="win-count">0</span></td>
                     <td><span id="loss-count">0</span></td>
                 </tr>
-            </table>
+                </table>
             <section id="rules-section">
                     <h2>The Rules</h2>
                     <p>Ready to play? Enter your bet and make your pick. In case you need a refresher, here are the rules:</p>
@@ -63,18 +64,15 @@
                         <li>Rock crushes scissors.</li>
                         <li>Scissors cut paper.</li>
                         <li>Paper covers rock.</li>
-                    </ul>
-                    
-                </section>
+                    </ul>      
+            </section>
         </section>
     </div>
 
         <section id="results-section" class="hidden">
-        <img id="user-image" src="assets/paper.png" class="hidden">
-        <img id="generated-hand" src="assets/scissors.png" class="hidden">
-        <h2><span id="outcome-message"></span></h2>
-
-        
+            <img id="user-image" src="assets/paper.png" class="hidden">
+            <img id="generated-hand" src="assets/scissors.png" class="hidden">
+            <h2><span id="outcome-message"></span></h2>        
         </section>
 
     </main>

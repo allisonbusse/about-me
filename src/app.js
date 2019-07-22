@@ -51,23 +51,23 @@ startQuiz.onclick = function() {
     }
 
     //convert score to percentage rounded to a whole number
-    correctAnswers = Math.round(correctAnswers / 3 * 100);
+    const grade = Math.round(correctAnswers / 3 * 100);
     
     //return results for 0 or 1 correct answers
-    if(correctAnswers < 35) {
-        results.textContent = 'Hey ' + name + ', you scored ' + correctAnswers + '% on the quiz! You might want to try again';
+    if(grade < 35) {
+        results.textContent = 'Hey ' + name + ', you scored ' + grade + '% on the quiz! You might want to try again';
         results.classList.add('bad-score');
     } 
 
     //return results for 2 correct answers
-    if(correctAnswers === 67) {
-        results.textContent = 'Hey ' + name + ', you scored ' + correctAnswers + '% on the quiz! Not bad!';
+    if(grade === 67) {
+        results.textContent = 'Hey ' + name + ', you scored ' + grade + '% on the quiz! Not bad!';
         results.classList.add('middle-score');
     } 
 
     //return results for 3 correct answers
-    if(correctAnswers === 100) {
-        results.textContent = 'Hey ' + name + ', you scored ' + correctAnswers + '% on the quiz! Nailed it!';
+    if(grade === 100) {
+        results.textContent = 'Hey ' + name + ', you scored ' + grade + '% on the quiz! Nailed it!';
         results.classList.add('good-score');
     } 
 

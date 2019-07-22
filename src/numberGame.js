@@ -40,15 +40,13 @@ checkAnswer.addEventListener('click', () => {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '👇 Oooh you\'re a bit too high 👇';
         guessesLeft.textContent = 'Number of guesses left: ' + guessCount;
-        
     }
 
     // If the user guesses too low
     else if(compareNumbers(Number(guess.value), correctNumber) === -1) {
         resultsSection.classList.remove('hidden');
         guessResponse.textContent = '👆 Oooh you\'re a bit too low 👆';
-        guessesLeft.textContent = 'Number of guesses left: ' + guessCount;
-        
+        guessesLeft.textContent = 'Number of guesses left: ' + guessCount; 
     }
 
 

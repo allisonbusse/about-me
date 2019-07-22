@@ -31,20 +31,20 @@ playGame.addEventListener('click', () => {
     generatedImage.src = src;
 
     //define the image src of the user's throw
-    userImage.classList.remove('hidden');
     const userSrc = 'assets/user-' + userChoice + '.png';
     userImage.src = userSrc;
+    userImage.classList.remove('hidden');
 
     //remove hidden class from results section
     resultsSection.classList.remove('hidden');
 
     // check betting balance
-
     checkBalance();
-       
+
+    // compare the two throws to determine winner
     compareThrow(userChoice, computerThrow);    
     
-    //tally score and balance
+    // tally score and balance
     winCount.textContent = wins;
     lossCount.textContent = losses;
     userBalance.textContent = balance;
@@ -52,13 +52,12 @@ playGame.addEventListener('click', () => {
 });    
 
 
-    //get user choice from input
+//get user choice from input
 function getUserChoice() {
     return document.querySelector('input:checked').value;
 }
 
 // compareThrow Function
-
 function compareThrow(userChoice, computerThrow) {
     let bet = userBet.value;
     if(userChoice === computerThrow) {
@@ -103,8 +102,7 @@ function compareThrow(userChoice, computerThrow) {
         }
     }}
  
-    // check betting balance
-
+// check betting balance
 function checkBalance() {
 
     if(balance <= 0) {

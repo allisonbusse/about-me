@@ -2,7 +2,7 @@ import { getThrowFromNumber } from '../src/get-throw.js';
 
 const test = QUnit.test;
 
-test('2 is scissors', function(assert) {
+test('return 2 when scissors is selected', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const computerThrow = 2;
@@ -15,7 +15,7 @@ test('2 is scissors', function(assert) {
     assert.equal(result, expected);
 });
 
-test('1 is paper', function(assert) {
+test('return 1 when paper is selected', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const computerThrow = 1;
@@ -28,7 +28,7 @@ test('1 is paper', function(assert) {
     assert.equal(result, expected);
 });
 
-test('0 is rock', function(assert) {
+test('return 0 when rock is selected', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const computerThrow = 0;
